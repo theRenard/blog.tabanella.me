@@ -2,28 +2,27 @@
   <div class="admin-auth-page">
     <div class="auth-container">
       <form>
-        <AppControlInput type="email">E-Mail Address</AppControlInput>
-        <AppControlInput type="password">Password</AppControlInput>
-        <AppButton type="submit">{{ isLogin ? 'Login' : 'Sign Up' }}</AppButton>
-        <AppButton
+        <RInput type="email">E-Mail Address</RInput>
+        <RInput type="password">Password</RInput>
+        <RButton type="submit">{{ isLogin ? 'Login' : 'Sign Up' }}</RButton>
+        <RButton
           type="button"
           btn-style="inverted"
           style="margin-left: 10px"
-          @click="isLogin = !isLogin">Switch to {{ isLogin ? 'Signup' : 'Login' }}</AppButton>
+          @click="isLogin = !isLogin">Switch to {{ isLogin ? 'Signup' : 'Login' }}</RButton>
       </form>
     </div>
   </div>
 </template>
 
 <script>
-import AppControlInput from '@/components/UI/AppControlInput'
-import AppButton from '@/components/UI/AppButton'
+import { RButton, RInput } from '@therenard/renard-ui';
 
 export default {
   name: 'AdminAuthPage',
   components: {
-    AppControlInput,
-    AppButton
+    RInput,
+    RButton
   },
   layout: 'admin',
   data() {

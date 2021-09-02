@@ -1751,6 +1751,17 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@therenard/renard-ui@^1.2.1":
+  version "1.5.0"
+  resolved "https://registry.npmjs.org/@therenard/renard-ui/-/renard-ui-1.5.0.tgz#4f54b77826062d417c57e4225ba30416f72d7ce2"
+  integrity sha512-FDTXZUg3slcp+HPuXDGHfefZ/C59d3naViXF/qakIsMQSKK6kn2s+Gvv1x5+cqnTkWXeA+cdM55/o+XvAvJ1/g==
+  dependencies:
+    "@types/prismjs" "^1.16.6"
+    core-js "^3.6.5"
+    prismjs "^1.24.1"
+    vue-class-component "^7.2.3"
+    vue-property-decorator "^9.1.2"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
@@ -2034,6 +2045,11 @@
   version "2.3.2"
   resolved "https://registry.npmjs.org/@types/prettier/-/prettier-2.3.2.tgz#fc8c2825e4ed2142473b4a81064e6e081463d1b3"
   integrity sha512-eI5Yrz3Qv4KPUa/nSIAi0h+qX0XyewOliug5F2QAtuRg6Kjg6jfmxe1GIwoIRhZspD1A0RP8ANrPwvEXXtRFog==
+
+"@types/prismjs@^1.16.6":
+  version "1.16.6"
+  resolved "https://registry.npmjs.org/@types/prismjs/-/prismjs-1.16.6.tgz#377054f72f671b36dbe78c517ce2b279d83ecc40"
+  integrity sha512-dTvnamRITNqNkqhlBd235kZl3KfVJQQoT5jkXeiWSBK7i4/TLKBNLV0S1wOt8gy4E2TY722KLtdmv2xc6+Wevg==
 
 "@types/pug@2.0.4":
   version "2.0.4"
@@ -4027,6 +4043,11 @@ core-js@^3.15.1:
   version "3.16.4"
   resolved "https://registry.npmjs.org/core-js/-/core-js-3.16.4.tgz#0fb1029a554fc2688c0963d7c900e188188a78e0"
   integrity sha512-Tq4GVE6XCjE+hcyW6hPy0ofN3hwtLudz5ZRdrlCnsnD/xkm/PWQRudzYHiKgZKUcefV6Q57fhDHjZHJP5dpfSg==
+
+core-js@^3.6.5:
+  version "3.17.2"
+  resolved "https://registry.npmjs.org/core-js/-/core-js-3.17.2.tgz#f960eae710dc62c29cca93d5332e3660e289db10"
+  integrity sha512-XkbXqhcXeMHPRk2ItS+zQYliAMilea2euoMsnpRRdDad6b2VY6CQQcwz1K8AnWesfw4p165RzY0bTnr3UrbYiA==
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -9955,7 +9976,7 @@ pretty@^2.0.0:
     extend-shallow "^2.0.1"
     js-beautify "^1.6.12"
 
-prismjs@^1.23.0:
+prismjs@^1.23.0, prismjs@^1.24.1:
   version "1.24.1"
   resolved "https://registry.npmjs.org/prismjs/-/prismjs-1.24.1.tgz#c4d7895c4d6500289482fa8936d9cdd192684036"
   integrity sha512-mNPsedLuk90RVJioIky8ANZEwYm5w9LcvCXrxHlwf4fNVSn8jEipMybMkWUyyF0JhnC+C4VcOVSBuHRKs1L5Ow==
@@ -12213,7 +12234,7 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npmjs.org/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vue-class-component@^7.2.6:
+vue-class-component@^7.2.3, vue-class-component@^7.2.6:
   version "7.2.6"
   resolved "https://registry.npmjs.org/vue-class-component/-/vue-class-component-7.2.6.tgz#8471e037b8e4762f5a464686e19e5afc708502e4"
   integrity sha512-+eaQXVrAm/LldalI272PpDe3+i4mPis0ORiMYxF6Ae4hyuCh15W8Idet7wPUEs4N4YptgFHGys4UrgNQOMyO6w==
@@ -12281,7 +12302,7 @@ vue-no-ssr@^1.1.1:
   resolved "https://registry.npmjs.org/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
 
-vue-property-decorator@^9.0.0:
+vue-property-decorator@^9.0.0, vue-property-decorator@^9.1.2:
   version "9.1.2"
   resolved "https://registry.npmjs.org/vue-property-decorator/-/vue-property-decorator-9.1.2.tgz#266a2eac61ba6527e2e68a6933cfb98fddab5457"
   integrity sha512-xYA8MkZynPBGd/w5QFJ2d/NM0z/YeegMqYTphy7NJQXbZcuU6FC6AOdUAcy4SXP+YnkerC6AfH+ldg7PDk9ESQ==

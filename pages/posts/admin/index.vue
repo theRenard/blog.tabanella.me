@@ -1,8 +1,8 @@
 <script lang="tsx">
 import 'reflect-metadata';
 import { Component, Vue } from "nuxt-property-decorator";
+import { RButton } from '@therenard/renard-ui';
 import PostList from "~/components/Posts/PostList.vue";
-import AppButton from "~/components/UI/AppButton.vue";
 
 @Component({
   layout: 'admin',
@@ -17,9 +17,9 @@ export default class Index extends Vue {
     return (
         <div class="admin-page">
           <section class="new-post">
-            <AppButton vOn:click={this.buttonHandler}>
+            <RButton vOn:click={this.buttonHandler}>
               Create Post
-            </AppButton>
+            </RButton>
           </section>
           <section class="existinig-posts">
             <h1>Existing Posts</h1>
